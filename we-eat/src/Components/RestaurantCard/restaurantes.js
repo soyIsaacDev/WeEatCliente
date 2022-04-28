@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 
-import style from "./restaurant-card.module.css";
+import style from "./restaurantes";
 import { getRestaurants } from "../../Actions/actions";
 
-export default function Restaurant_Card() {
+export default function Restaurantes() {
   const restaurants = useSelector((state) => state.loadedRestaurants);
   
   const dispatch = useDispatch();
@@ -15,6 +15,8 @@ export default function Restaurant_Card() {
   
   return (
     <div>
+      <h1>Bienvenido a We-Eat</h1>
+      <Link to ="/login">Login</Link>
       {restaurants.map((restaurant) => {
         const rutaImg = "http://localhost:4000/uploads/"+ restaurant.ImgRest.name;
         
