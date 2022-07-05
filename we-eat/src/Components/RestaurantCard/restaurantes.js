@@ -7,6 +7,7 @@ import NavBar from "../NavBar/NavBar";
 import s from "./restaurantes.module.css";
 //import "./restaurantes.css";
 
+import { host } from "../../host";
 
 
 export default function Restaurantes() {
@@ -25,7 +26,7 @@ export default function Restaurantes() {
       <h1 className={s.rtitle}>Bienvenido a We-Eat</h1>
       <NavBar className={s.navBar}></NavBar>
       {restaurants.map((restaurant) => {
-        const rutaImg = "http://localhost:4000/restaurantes/uploads/"+ restaurant.ImgRest.name;
+        const rutaImg = `${host}/restaurantes/uploads/`+ restaurant.ImgRest.name;
         
           return (
             <Link to={`/restaurantDetails/${restaurant.id}`}>

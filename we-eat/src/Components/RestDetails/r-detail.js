@@ -5,6 +5,8 @@ import { useDispatch, useSelector  } from "react-redux";
 import { getPlatillos, getRestaurantDetails } from "../../Actions/actions";
 import DishCard from "../DishCard/dishCard";
 
+import { host } from "../../host";
+
 import "./r-details.css";
 import star from "./media//star.png";
 import food from "./media//food-tray-a.png";
@@ -26,7 +28,7 @@ export default function RestaurantDetails() {
     const platillos = useSelector((state)=> state.loadedPlatillos);
 
     if(Object.keys(restaurante).length>0){
-        const rutaImgRest = "http://localhost:4000/restaurantes/uploads/"+ restaurante.ImgRest.name;
+        const rutaImgRest = `${host}/restaurantes/uploads/`+ restaurante.ImgRest.name;
         
         return(
             <div className="allwrapper">
@@ -53,7 +55,7 @@ export default function RestaurantDetails() {
                         </div>
                         <div className="seleccion">Seleccionado para ti</div>
                         {platillos.map((platillo)=>{
-                            const rutaImg = "http://localhost:4000/restaurantes/uploads/"+ platillo.ImgPlatillo.name;
+                            const rutaImg = `$host}/restaurantes/uploads/`+ platillo.ImgPlatillo.name;
                             return(
                                 <Link to = {`/DishDetail/${platillo.id}`} className="rdlink">
                                     <DishCard nombrePlatillo = {platillo.nombre} descripcion = {platillo.descripcion}

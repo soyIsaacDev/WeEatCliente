@@ -6,6 +6,7 @@ import "./dish-details.css";
 import AddPedido from "./AgregarCarrito/agregar";
 import { addItem } from "../../Actions/actions";
 
+import { host } from "../../host";
 
 export default function Dish_Details(props) {
 
@@ -18,7 +19,7 @@ export default function Dish_Details(props) {
   platillos.map((p)=>{
     if(p.id === parseInt(platilloId)){
       platilloData = p;
-      rutaImg = "http://localhost:4000/restaurantes/uploads/"+ platilloData.ImgPlatillo.name;
+      rutaImg = `${host}/restaurantes/uploads/`+ platilloData.ImgPlatillo.name;
       return platilloData;
     }
   })
