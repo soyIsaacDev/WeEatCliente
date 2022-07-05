@@ -1,5 +1,5 @@
 // ACTIONS
-const host = "https://weeatapi.herokuapp.com";
+import { host } from "../host";
 
 export function addMap(payload) {
     return { 

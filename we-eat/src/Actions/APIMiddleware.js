@@ -1,7 +1,7 @@
 // Post a Servidor
 
 import { deleteCart, getPedidos } from "./actions";
-const host = "https://weeatapi.herokuapp.com";
+import { host } from "../host";
 
 export function addRepartidor(data){
     async function postData(){
