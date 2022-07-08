@@ -2,6 +2,7 @@
   "name": "we-eat",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://weeatcliente.onrender.com/",
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.13.10",
     "@googlemaps/react-wrapper": "^1.1.29",

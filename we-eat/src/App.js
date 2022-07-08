@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import "./App.css";
 
@@ -25,33 +25,35 @@ function App() {
   return (
     <div className="App">
         <React.Fragment>
-          <Routes>
-            <Route path="/" element={<Signin />} />
-            {/* <Route path="/signinrest" element={<SignInRest />} /> */}
-            <Route exact path="/AgregarClientes" element = { <AgregarClienteFinal/> } />
-            <Route path="/NavBar" element={<NavBar/>} />
-            <Route exact path="/LiveCoding" element = { <LiveCoding/> } />
-                <Route exact path="/Geolocation" element = { <Geolocation/> } />
-                <Route exact path="/map" element = { <Map/> } />
-                <Route exact path="/marker" element = { <Marker/> } />
-            <Route exact path="/maplive" element = { <MapLive/> } />
-            <Route exact path="/mapa" element = { <Mapa/> } />
-            <Route exact path="/addRepartidor" element = { <AddRepartidor/> } />
-            
-            <Route element={<ProtectedRoutes />}>
-                <Route exact path="/Restaurantes" element = { <Restaurantes/> } />
-                <Route path="/RestaurantDetails/:id" element = { <RestaurantDetails/> } />
-                <Route exact path="/DishDetail/:id" element={ <DishDetails/> } />
-                <Route exact path="/Carrito" element = { <Carrito/> } />
-                <Route exact path="/pedido" element = { <Pedido/> } /> 
-                {/* <Route exact path="/LiveCoding" element = { <LiveCoding/> } />
-                <Route exact path="/Geolocation" element = { <Geolocation/> } />
-                
-                <Route exact path="/map" element = { <Map/> } />
-                <Route exact path="/marker" element = { <Marker/> } /> */}
-                {/* <Route exact path="/Perfil" element = { <LoginHome/> } /> */}
-            </Route>
-        </Routes>
+          <BrowserRouter basename="/React">
+            <Routes>
+              <Route path="/" element={<Signin />} />
+              {/* <Route path="/signinrest" element={<SignInRest />} /> */}
+              <Route exact path="/AgregarClientes" element = { <AgregarClienteFinal/> } />
+              <Route path="/NavBar" element={<NavBar/>} />
+              <Route exact path="/LiveCoding" element = { <LiveCoding/> } />
+                  <Route exact path="/Geolocation" element = { <Geolocation/> } />
+                  <Route exact path="/map" element = { <Map/> } />
+                  <Route exact path="/marker" element = { <Marker/> } />
+              <Route exact path="/maplive" element = { <MapLive/> } />
+              <Route exact path="/mapa" element = { <Mapa/> } />
+              <Route exact path="/addRepartidor" element = { <AddRepartidor/> } />
+              
+              <Route element={<ProtectedRoutes />}>
+                  <Route exact path="/Restaurantes" element = { <Restaurantes/> } />
+                  <Route path="/RestaurantDetails/:id" element = { <RestaurantDetails/> } />
+                  <Route exact path="/DishDetail/:id" element={ <DishDetails/> } />
+                  <Route exact path="/Carrito" element = { <Carrito/> } />
+                  <Route exact path="/pedido" element = { <Pedido/> } /> 
+                  {/* <Route exact path="/LiveCoding" element = { <LiveCoding/> } />
+                  <Route exact path="/Geolocation" element = { <Geolocation/> } />
+                  
+                  <Route exact path="/map" element = { <Map/> } />
+                  <Route exact path="/marker" element = { <Marker/> } /> */}
+                  {/* <Route exact path="/Perfil" element = { <LoginHome/> } /> */}
+              </Route>
+          </Routes>
+        </BrowserRouter>
         </React.Fragment>
     </div>
   );
