@@ -25,7 +25,6 @@ function App() {
   return (
     <div className="App">
         <React.Fragment>
-          <BrowserRouter basename="/">
             <Routes>
               <Route path="/" element={<Signin />} />
               {/* <Route path="/signinrest" element={<SignInRest />} /> */}
@@ -53,7 +52,6 @@ function App() {
                   {/* <Route exact path="/Perfil" element = { <LoginHome/> } /> */}
               </Route>
             </Routes>
-          </BrowserRouter>
         </React.Fragment>
     </div>
   );
