@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
         <React.Fragment>
-          <BrowserRouter basename="/index.html">
+          <BrowserRouter basename="/">
             <Routes>
               <Route path="/" element={<Signin />} />
               {/* <Route path="/signinrest" element={<SignInRest />} /> */}
