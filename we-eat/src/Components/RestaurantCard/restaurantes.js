@@ -5,17 +5,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { getRestaurants } from "../../Actions/actions";
 import NavBar from "../NavBar/NavBar";
 import s from "./restaurantes.module.css";
-//import "./restaurantes.css";
 
 import { host } from "../../host";
 
-
 export default function Restaurantes() {
-  
 
   const restaurants = useSelector((state) => state.loadedRestaurants);
-  
-  
+    
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getRestaurants());

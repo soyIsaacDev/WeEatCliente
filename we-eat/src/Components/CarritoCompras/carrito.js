@@ -18,7 +18,8 @@ export default function Carrito_Compras() {
 
   var subtotal = 0;
   carrito.map((c)=>{
-    subtotal = subtotal + c.precio
+    subtotal = subtotal + c.precio;
+    return subtotal;
   })
 
   const handleSelectChange = function(e){
@@ -38,6 +39,7 @@ export default function Carrito_Compras() {
       dispatch(addPedido(pedido));
       console.log("Colocar Pedido " + JSON.stringify(pedido));
       navigate("/Pedido", { replace: false });
+      return pedido;
     });
   }
 

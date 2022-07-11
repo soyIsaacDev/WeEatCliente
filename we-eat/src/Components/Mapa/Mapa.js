@@ -1,16 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import {Wrapper} from "@googlemaps/react-wrapper";
 
-import Marker from "../GeolocationMap/Marker";
+
 
 export default function Mapa() {
     const style = { height: "100vh"};
     const inputDiv = useRef(); 
-    const positions = [
-        {lat: 29.08, lng:-110.96},
-        {lat: 29.08, lng:-111.012893},
-        {lat: 29.10, lng:-110.942893}
-    ];
     
     const [map, setMap] = useState(null);
     const [marker, setMarker] = useState(null);

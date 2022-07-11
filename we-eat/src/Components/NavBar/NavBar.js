@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 import s from "./navBar.module.css";
 
 import inicio from "./start.png";
-import cuenta from "./account.png";
-import oferta from "./sale.png";
 import carrito from "./burger-cart.png";
 import delivery from "./take-away.png";
 

@@ -60,7 +60,7 @@ export default function SignIn(props) {
                 {loginState === "LoggedIn" ? (
                     <Navigate to="/Restaurantes" ></Navigate>
                     ): (
-                    <h2></h2>
+                    <div></div>
                     )}
             </form>
         </div>

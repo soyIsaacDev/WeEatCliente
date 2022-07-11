@@ -22,6 +22,8 @@ export default function Dish_Details(props) {
       rutaImg = `${host}/restaurantes/uploads/`+ platilloData.ImgPlatillo.name;
       return platilloData;
     }
+    else 
+    return platilloData=0;
   })
 
   const [input, setInput] = useState({
