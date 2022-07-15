@@ -3,6 +3,8 @@ import { Routes, Route} from "react-router-dom";
 
 import "./App.css";
 
+import Bienvenida from "./Components/Bienvenida/Bienvenida";
+import OtraBienvenida from "./Components/Bienvenida/otraBienvenida";
 import Restaurantes from "./Components/RestaurantCard/restaurantes";
 import RestaurantDetails from "./Components/RestDetails/r-detail";
 import DishDetails from "./Components/DishDetails/dish-details";
@@ -21,7 +23,9 @@ function App() {
     <div className="App">
         <React.Fragment>
             <Routes>
-              <Route path="/" element={<Signin />} />
+              <Route path="/" element={<OtraBienvenida />} />
+              <Route path="/Bienvenida" element={<Bienvenida/>} />
+              <Route path="/Inicio" element={<Signin />} />
               <Route exact path="/AgregarClientes" element = { <AgregarClienteFinal/> } />
               <Route path="/NavBar" element={<NavBar/>} />
                   <Route exact path="/AddGeolocation" element = { <Geolocation/> } />
