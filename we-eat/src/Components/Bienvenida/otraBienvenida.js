@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+
 import s from "./otrabienvenida.module.css";
+
 import logo from "./icons/LogoWeEat.png"
+import eye from "./icons/eye 1.svg";
 
 export default function OtraBienvenida() {
     return(
@@ -30,7 +33,7 @@ export default function OtraBienvenida() {
 
             <section id="instructions" className={s.main_instructions_container}>
                 <h2 className={s.main_instructions_container_h2}>Users</h2>
-                <h3 className={s.main_instructions_container_h3}>Database Restarts every 24 hours</h3>
+                <h3 className={s.main_instructions_container_h3}>Database Restarts Every 24 hours</h3>
                 <h3 className={s.main_instructions_container_h3}>Add fresh users</h3>
                 {/* <h3 className={s.main_instructions_container_h3}>And add restaurants, dishes</h3>
                 <h3 className={s.main_instructions_container_h3}> delivery and customers</h3> */}
@@ -78,6 +81,87 @@ export default function OtraBienvenida() {
 
             </section>
 
+            <section className={s.main_product_detail}>
+                <span className={s.product_detail_logo}>
+                </span>
+                <div className="product-detail--title">
+                    <h2 className={s.main_product_detail_h2}>Add Data</h2> 
+                    <p className={s.main_product_detail_p}>and try this demo</p>
+                </div>
+            
+                <section className="product-cards--container">
+                    <article className={s.product_detail_card}>
+                        <span className={s.card_icon}>
+                            <img src={eye} alt="eye"></img>
+                        </span>
+                        <h2 className={s.product_detail_card_h2}>Restaurant</h2>
+                        <p className={s.product_detail_card_p}>Add a new restaurant</p>
+                        <p className={s.product_detail_card_p}>Add some dishes</p>
+                        <p className={s.product_detail_card_p}></p>
+                    </article> 
+                </section>
+                <section className="product-cards--container">
+                    <article className={s.product_detail_card}>
+                        <span className={s.card_icon}>
+                            <img src={eye} alt="eye"></img>
+                        </span>
+                        <h2 className={s.product_detail_card_h2}>Customer</h2>
+                        <p className={s.product_detail_card_p}>Explore the App</p>
+                        <p className={s.product_detail_card_p}>Place an order</p>
+                        <p className={s.product_detail_card_p}></p>
+                    </article> 
+                </section>
+                <section className="product-cards--container">
+                    <article className={s.product_detail_card}>
+                        <span className={s.card_icon}>
+                            <img src={eye} alt="eye"></img>
+                        </span>
+                        <h2 className={s.product_detail_card_h2}>Restaurant</h2>
+                        <p className={s.product_detail_card_p}>Recieve new orders</p>
+                        <p className={s.product_detail_card_p}>Procces orders</p>
+                        <p className={s.product_detail_card_p}>Send to Delivery</p>
+                    </article> 
+                </section>
+                <section className="product-cards--container">
+                    <article className={s.product_detail_card}>
+                        <span className={s.card_icon}>
+                            <img src={eye} alt="eye"></img>
+                        </span>
+                        <h2 className={s.product_detail_card_h2}>Delivery</h2>
+                        <p className={s.product_detail_card_p}>Recieve new delivery</p>
+                        <p className={s.product_detail_card_p}>Procces delivery</p>
+                        <p className={s.product_detail_card_p}></p>
+                    </article> 
+                </section>
+            
+            </section>
+
+            <footer>
+                    <section className={s.footer_section}>
+                        <ul className={s.footer_left_ul}>
+                            <li className={s.left_li}>
+                                <a  
+                                    target="_blank" 
+                                    href="https://www.linkedin.com/in/isaac-borbon-369119b3/"
+                                    rel="noopener noreferrer"
+                                    className={s.left_a}
+                                > 
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section className={s.footer_section}>
+                        <img src={logo} alt="Logo WeEat 2020"></img>
+                    </section>
+                    <section className={s.footer_section_down}>
+                        WeEat 2020
+                    </section>
+                
+            </footer>
+
         </main>
+
+        
     )
 }
