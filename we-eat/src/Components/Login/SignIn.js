@@ -12,6 +12,7 @@ export default function SignIn(props) {
     
     const [input, setInput] = useState({ username: "", password:""});
     const loginState = useSelector((state) => state.loginState.autenticated);
+    const loginResponse = useSelector((state) => state.loginState.Response);
     
     const handleInputChange = function(e){
         setInput({ 
@@ -34,11 +35,17 @@ export default function SignIn(props) {
     
     return(
         <div className={s.allwrapper}>
-            <Link to={`/AgregarClientes`} className={s.agregarclientes} >
-                Obtener una cuenta  <div className={s.aqui}>aqui</div> </Link>
+            <div className={s.agregarclientes}>
+            <Link to={`/AgregarClientes`}  >
+                    Obtener una cuenta  <span className={s.aqui}>aqui</span> 
+            </Link>
+            </div>
             
             <form onSubmit={onSubmit} className={s.form}>
-            <div className={s.title}> Bienvenido a We-Eat </div>
+            <div className={s.title}> Bienvenido </div>
+            <div className={s.title}> a </div>
+            <div className={s.title}> We-Eat </div>
+                <div className={s.respuesta_servidor}>{loginResponse}</div>  
                 <input
                     name= 'username'
                     value = {input.username}
@@ -56,13 +63,16 @@ export default function SignIn(props) {
                 />
 
                 <input type="submit" className={s.submit}/>
+                
 
                 {loginState === "LoggedIn" ? (
                     <Navigate to="/Restaurantes" ></Navigate>
                     ): (
                     <div></div>
-                    )}
+                    )
+                }
             </form>
+            
         </div>
     )
 }

@@ -30,7 +30,7 @@ export default function AgregarClienteFinal() {
   const onSubmit = async (e) => {
     e.preventDefault();
     addClientes(input);
-    navigate(`/`);
+    navigate(`/Inicio`);
   };
 
   return (
