@@ -89,7 +89,7 @@ export default function Bienvenida() {
             <section className={s.main_product_detail}>
                 <span className={s.product_detail_logo}>
                 </span>
-                <div className="product-detail--title">
+                <div>
                     <h2 className={s.main_product_detail_h2}>Add Data</h2> 
                     <p className={s.main_product_detail_p}>and try this demo</p>
                 </div>

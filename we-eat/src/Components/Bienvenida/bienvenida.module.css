@@ -87,7 +87,7 @@ header {
     margin-left: 10px;
     padding-top: 2px;
     object-fit: fill;
-    background-image: url(./icons/smile.png);
+    background-image: url(./icons/smiling-face.png);
     background-repeat: no-repeat;
 }
 .header_button {
@@ -118,6 +118,8 @@ header {
     height: 9px;
     margin-left: 10px;
     background-image: url(./icons/Vector.svg);
+    /* <a href="https://www.flaticon.com/free-icons/smile" 
+        title="smile icons">Smile icons created by Md Tanvirul Haque - Flaticon</a> */
     background-repeat: no-repeat;
 }
 main{
@@ -138,7 +140,7 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 .food_img_container_h2{
     display: flex;
@@ -174,6 +176,7 @@ main{
     width: 90%;
     margin-left: 5%;
     margin-bottom: 25px;
+    padding-top: 20px;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
@@ -202,8 +205,7 @@ main{
     scroll-snap-align: center;
     /* centra el elemento al usar scroll horizontal */
     width: 90%;
-    min-width: 250px;
-    max-width: 300px;
+    width: 250px;
     height: 300px;
     margin: 50px 5px 0;
     padding: 0 15px;
@@ -217,8 +219,7 @@ main{
     scroll-snap-align: center;
     /* centra el elemento al usar scroll horizontal */
     width: 90%;
-    min-width: 250px;
-    max-width: 300px;
+    width: 250px;
     height: 300px;
     margin: 50px 5px 0;
     padding: 0 15px;
@@ -232,8 +233,7 @@ main{
     scroll-snap-align: center;
     /* centra el elemento al usar scroll horizontal */
     width: 90%;
-    min-width: 250px;
-    max-width: 300px;
+    width: 250px;
     height: 300px;
     margin: 50px 5px 0;
     padding: 0 15px;
@@ -293,21 +293,28 @@ main{
     position: absolute;
     /* cuando colocamos un position absolute va a buscar el primer contenedor padre para que su posicion se base de ahi */
     background-image: url(./icons/WeEatLogoYellow.png);
-    left: calc(50% - 35px);
-    top: -25px;
-    width: 70px;
-    height: 60px;
+    left: calc(50% - 82px);
+    top: -65px;
+    width: 140px;
+    height: 120px;
     display: block;
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
 }
+.product_detail_title{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    background-color: var(--off-white);
+}
 .main_product_detail_h2{
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 2.6rem;
     text-align: center;
+    justify-content: center;
 }
 .main_product_detail_p {
     margin-top: 15px;
@@ -450,6 +457,7 @@ footer{
         background-size: contain;
         margin-left: 12px;
         margin-top: -5px;
+        background-image: url(./icons/smiling-face64.png);
     }
     .header_button {
         top: 85%;
@@ -467,9 +475,12 @@ footer{
     .food_img_container_p{
         font-size: 3.5rem;
     }
+    .main_instructions_container{
+        height: 65vh;
+    }
     .main_instructions_container_h2{
         font-size: 5.5rem;
-        padding-top: 2%;
+        padding-top: 4%;
     }
     .main_instructions_container_h3{
         width: 90%;
@@ -481,18 +492,18 @@ footer{
         height: 450px;
     } 
     .instructions_container_card_1{
-        min-width: 400px;
-        height: 380px;
+        min-width: 300px;
+        height: 360px;
         order: 1;
     }
     .instructions_container_card_2{
-        min-width: 400px;
-        height: 380px;
+        min-width: 300px;
+        height: 360px;
         order: 2;
     }
     .instructions_container_card_3{
-        min-width: 400px;
-        height: 380px;
+        min-width: 300px;
+        height: 360px;
         order: 3;
     }
 
@@ -509,15 +520,15 @@ footer{
     }
     
     .instructions_container_title_button{
-        width: 66%;
+        width: 75%;
         height: 80px;
-        font-size: 2.6rem;
+        font-size: 2.1rem;
     }            
     .product_detail_logo{
-        left: calc(50% - 100px);
-        top: -90px;
-        width: 180px;
-        height: 160px;
+        left: calc(50% - 120px);
+        top: -102px;
+        width: 200px;
+        height: 180px;
     }
     .main_product_detail_h2{
         margin-top: 70px;
@@ -552,6 +563,7 @@ footer{
     }
 }
 
+
 @media only screen and (min-width: 1100px) {
     header {
         height: 480px;
@@ -574,12 +586,40 @@ footer{
     .food_img_container_p{
         padding-top: 7%;
     }
+    .main_instructions_container{
+        height: 130vh;
+    }
+        .instructions_container_slider{
+            height: 450px;
+        } 
+            .instructions_container_card_1{
+                min-width: 390px;
+                height: 360px;
+                order: 1;
+            }
+            .instructions_container_card_2{
+                min-width: 390px;
+                height: 360px;
+                order: 2;
+            }
+            .instructions_container_card_3{
+                min-width: 390px;
+                height: 360px;
+                order: 3;
+            }
+
     .main_product_detail{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }  
+    .product_detail_logo{
+        left: calc(50% - 120px);
+        top: -102px;
+        width: 200px;
+        height: 180px;
+    }
     .main_product_detail_h2{
         width: 100vw;
         height: 10%;
@@ -598,21 +638,36 @@ footer{
     }
 }
 
-@media only screen and (min-width: 1100px) {
-    .instructions_container_slider{
-        height: 500px;
-    } 
-    .instructions_container_card_1{
-        min-width: 460px;
-        height: 410px;
-    }
-    .instructions_container_card_2{
-        min-width: 460px;
-        height: 410px;
-    }
-    .instructions_container_card_3{
-        min-width: 460px;
-        height: 410px;
-    }
+@media only screen and (min-width: 1500px) {
     
-}
+    .main_instructions_container{
+        height: 105vh;
+    }
+        .instructions_container_slider{
+            height: 450px;
+            gap: 35px;
+            padding-left: 7%;
+            margin-top: 1%;
+            overflow-x: hidden;
+        } 
+            .instructions_container_card_1{
+                min-width: 400px;
+                height: 360px;
+                order: 1;
+            }
+            .instructions_container_card_2{
+                min-width: 400px;
+                height: 360px;
+                order: 2;
+            }
+            .instructions_container_card_3{
+                min-width: 400px;
+                height: 360px;
+                order: 3;
+            }
+                .instructions_container_title_button{
+                    width: 75%;
+                    height: 80px;
+                    font-size: 2.7rem;
+                } 
+        }
