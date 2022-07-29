@@ -30,8 +30,6 @@ html{
 .agregarclientes{
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: flex-end;
     width: 100%;
     height: 10%;
     padding-right: 5%;

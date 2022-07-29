@@ -1,6 +1,27 @@
+:root{
+    /* Colores */
+    --orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --warm-black: #201E1C;
+    --warm-black1: #282623;
+    --off-white:  #FAF8F7;
+    --just-white: #FFFFFF;
+    --grey: #bababa;
+    --green: #103606;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family:'DM Sans', sans-serif;
+}
 .navBar{
     width:100vw;
     height: 8vh;
+    margin: 2vh 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -8,15 +29,16 @@
 }
 
     .menu_button{
-        width: 8vh;
-        height: 8vh;
+        width: 10vh;
+        height: 10vh;
         border-radius: 50%;
-        margin: 0 7vw;
+        margin: 0 4vw;
         border: solid;
         border-color: gainsboro;
         border-width: 2px;
         box-shadow: 0px 2px 8px gainsboro;
-
+        font-size: 2rem;
+        font-weight: 600;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -38,6 +60,7 @@
         align-items:center;
         flex-direction: row;
         margin-top: 7%;
+        font-size: 2.2rem;
     }
 
     .menu_button{
@@ -56,13 +79,25 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items:center;
-        margin-top: 2%;
+        margin: 0vh 0;
     }
 
     .menu_button{
-        width: 18vh;
-        height: 18vh;
+        width: 13vh;
+        height: 13vh;
         border-radius: 50%;
         margin: 0 3vw;
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .navBar{
+        margin: 3vh 0;
+    }
+
+    .menu_button{
+        width: 22vh;
+        height: 20vh;
     }
 }

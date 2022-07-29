@@ -40,18 +40,21 @@ export default function AgregarClienteFinal() {
       <h1>Bienvenido a We Eat</h1>
       <h3>Por favor agrega tus datos</h3>
         <input
+          className={s.input_area}
           name="nombre"
           value={input.nombre}
           placeholder="Nombre"
           onChange={(e) => handleInputChange(e)}
         />
         <input
+          className={s.input_area}
           name="usuario"
           value={input.usuario}
           placeholder="Usuario"
           onChange={(e) => handleInputChange(e)}
         />
         <input
+          className={s.input_area}
           name="contraseña"
           value={input.contraseña}
           placeholder="contraseña"

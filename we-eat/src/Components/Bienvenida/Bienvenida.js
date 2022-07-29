@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 
 import s from "./bienvenida.module.css";
 
-import logo from "./icons/LogoWeEat.png"
-import eye from "./icons/eye 1.svg";
+import logo from "./icons/WeEatLogoYellow.png";
+import logoChico from "./icons/WeEatLogoChico.png";
+import logoBlanco from "./icons/WeEatLogoBN.png";
 
 export default function Bienvenida() {
     const myRef = useRef(null)
@@ -22,7 +23,7 @@ export default function Bienvenida() {
                 >
                 </img>
                 <div className={s.header_title_container}>
-                    <h1 className={s.header_title_container_title}>WeEat</h1>
+                    {/* <h1 className={s.header_title_container_title}>WeEat</h1> */}
                     <h1 className={s.header_title_container_h1}>
                         Food Ordering App Demo
                     </h1>
@@ -43,17 +44,16 @@ export default function Bienvenida() {
                 
                 <section className={s.instructions_container_slider}>
 
-                    <article className={s.instructions_container_card}>
+                    <article className={s.instructions_container_card_1}>
                         <h3 className={s.instructions_container_title}>Customer</h3>
                         <section>
                             <Link to= "/AgregarClientes" target="_blank" rel="noopener noreferrer">
                                 <button className={s.instructions_container_title_button}>Customer User </button>
                             </Link>
-                            
                         </section>
                     </article>
 
-                    <article className={s.instructions_container_card}>
+                    <article className={s.instructions_container_card_2}>
                         <p className={s.instructions_container_card_p}>
                             <div ref={myRef}>Start Here</div> 
                         </p>
@@ -69,7 +69,7 @@ export default function Bienvenida() {
                         </section>
                     </article>
 
-                    <article className={s.instructions_container_card}>
+                    <article className={s.instructions_container_card_3}>
                         <h3 className={s.instructions_container_title}>Delivery</h3>
                         <section>
                         <button className={s.instructions_container_title_button}>
@@ -81,6 +81,7 @@ export default function Bienvenida() {
                             </button>
                         </section>
                     </article>
+
                 </section>
 
             </section>
@@ -95,8 +96,7 @@ export default function Bienvenida() {
             
                 <section className="product-cards--container">
                     <article className={s.product_detail_card}>
-                        <span className={s.card_icon}>
-                            <img src={eye} alt="eye"></img>
+                        <span className={s.card_icon}>I
                         </span>
                         <h2 className={s.product_detail_card_h2}>Restaurant</h2>
                         <p className={s.product_detail_card_p}>Add a new restaurant</p>
@@ -106,8 +106,7 @@ export default function Bienvenida() {
                 </section>
                 <section className="product-cards--container">
                     <article className={s.product_detail_card}>
-                        <span className={s.card_icon}>
-                            <img src={eye} alt="eye"></img>
+                        <span className={s.card_icon}>II
                         </span>
                         <h2 className={s.product_detail_card_h2}>Customer</h2>
                         <p className={s.product_detail_card_p}>Explore the App</p>
@@ -117,8 +116,7 @@ export default function Bienvenida() {
                 </section>
                 <section className="product-cards--container">
                     <article className={s.product_detail_card}>
-                        <span className={s.card_icon}>
-                            <img src={eye} alt="eye"></img>
+                        <span className={s.card_icon}> III
                         </span>
                         <h2 className={s.product_detail_card_h2}>Restaurant</h2>
                         <p className={s.product_detail_card_p}>Recieve new orders</p>
@@ -128,8 +126,7 @@ export default function Bienvenida() {
                 </section>
                 <section className="product-cards--container">
                     <article className={s.product_detail_card}>
-                        <span className={s.card_icon}>
-                            <img src={eye} alt="eye"></img>
+                        <span className={s.card_icon}> IV
                         </span>
                         <h2 className={s.product_detail_card_h2}>Delivery</h2>
                         <p className={s.product_detail_card_p}>Recieve new delivery</p>
@@ -156,7 +153,11 @@ export default function Bienvenida() {
                         </ul>
                     </section>
                     <section className={s.footer_section}>
-                        <img src={logo} alt="Logo WeEat 2020"></img>
+                        <img 
+                            src={logoBlanco} 
+                            alt="Logo WeEat 2020"
+                            className={s.footer_img}
+                        ></img>
                     </section>
                     <section className={s.footer_section_down}>
                         WeEat 2020

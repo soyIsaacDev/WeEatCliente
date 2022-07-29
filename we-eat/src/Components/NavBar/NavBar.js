@@ -11,18 +11,15 @@ export default function NavBar() {
   return (
       <div className={s.navBar}>
           <Link to= "/Restaurantes">
-            <button className={s.menu_button}>
-              <img src= {inicio} alt="Inicio"></img>
+            <button className={s.menu_button}> Inicio
             </button>
           </Link> 
           <Link to= "/Carrito">
-            <button className={s.menu_button}>
-              <img src= {carrito} alt="Carrito"></img>
+            <button className={s.menu_button}> Carrito
             </button>
           </Link>
           <Link to= "/pedido">
-            <button className={s.menu_button}>
-            <img src= {delivery} alt="Status Orden"></img>
+            <button className={s.menu_button}> Pedido
             </button>
           </Link>
       </div>
