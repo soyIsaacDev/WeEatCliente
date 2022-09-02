@@ -2,7 +2,6 @@
 
 import { deleteCart, getPedidos } from "./actions";
 import { host } from "../host";
-require('dotenv').config();
 
 
 export function addRepartidor(data){
