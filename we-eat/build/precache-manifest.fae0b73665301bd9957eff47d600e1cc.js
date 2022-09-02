@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "b924d34b3bb8204de830",
+    "revision": "93c52364e22aae327075",
     "url": "/static/css/main.c2a815e3.chunk.css"
   },
   {
-    "revision": "b924d34b3bb8204de830",
-    "url": "/static/js/main.b924d34b.chunk.js"
+    "revision": "93c52364e22aae327075",
+    "url": "/static/js/main.93c52364.chunk.js"
   },
   {
     "revision": "9b47298707f365d7f274",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/static/media/WeEatLogoChico.116a384a.png"
   },
   {
-    "revision": "54d0e7628435198cb6ff7bf1c096ab7d",
+    "revision": "77c5687c8cf74075cae940902eb33b62",
     "url": "/index.html"
   }
 ];

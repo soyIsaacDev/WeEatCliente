@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.c2a815e3.chunk.css",
-  "main.js": "/static/js/main.b924d34b.chunk.js",
-  "main.js.map": "/static/js/main.b924d34b.chunk.js.map",
+  "main.js": "/static/js/main.93c52364.chunk.js",
+  "main.js.map": "/static/js/main.93c52364.chunk.js.map",
   "static/js/1.9b472987.chunk.js": "/static/js/1.9b472987.chunk.js",
   "static/js/1.9b472987.chunk.js.map": "/static/js/1.9b472987.chunk.js.map",
   "static/js/2.0ef4c768.chunk.js": "/static/js/2.0ef4c768.chunk.js",
@@ -14,6 +14,6 @@
   "static/media/WeEatLogoChico.png": "/static/media/WeEatLogoChico.116a384a.png",
   "static/css/main.c2a815e3.chunk.css.map": "/static/css/main.c2a815e3.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.e20d047ff0765ecc9092b72a8429b3c5.js": "/precache-manifest.e20d047ff0765ecc9092b72a8429b3c5.js",
+  "precache-manifest.fae0b73665301bd9957eff47d600e1cc.js": "/precache-manifest.fae0b73665301bd9957eff47d600e1cc.js",
   "service-worker.js": "/service-worker.js"
 }
