@@ -55,7 +55,7 @@ export default function RestaurantDetails() {
                         </div>
                         <div className="seleccion">Seleccionado para ti</div>
                         {platillos.map((platillo)=>{
-                            const rutaImg = `$host}/restaurantes/uploads/`+ platillo.ImgPlatillo.name;
+                            const rutaImg = `${host}/restaurantes/uploads/`+ platillo.ImgPlatillo.name;
                             return(
                                 <Link to = {`/DishDetail/${platillo.id}`} className="rdlink">
                                     <DishCard nombrePlatillo = {platillo.nombre} descripcion = {platillo.descripcion}

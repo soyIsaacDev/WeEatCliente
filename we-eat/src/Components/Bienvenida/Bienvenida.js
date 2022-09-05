@@ -10,8 +10,8 @@ import logoBlanco from "./icons/WeEatLogoBN.png";
 export default function Bienvenida() {
     const myRef = useRef(null)
  
+    //Ayuda a mandar al usuario a una seccion dentro de la misma pagina (en este caso hacia abajo)
     const executeScroll = () => myRef.current.scrollIntoView()    
-    // run this function from an event handler or an effect to execute scroll 
 
     return(
         <main>
@@ -143,7 +143,7 @@ export default function Bienvenida() {
                             <li className={s.left_li}>
                                 <a  
                                     target="_blank" 
-                                    href="https://www.linkedin.com/in/isaac-borbon-369119b3/"
+                                    href="https://www.linkedin.com/in/isaacborbondev/"
                                     rel="noopener noreferrer"
                                     className={s.left_a}
                                 > 
